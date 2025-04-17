@@ -1,0 +1,28 @@
+.landing-img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+}
+
+.landing-container {
+    display: flex;
+    height: 100vh;
+}
+
+.landing-text-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+}
+
+.landing-text {
+    width: 600px;
+}   
+
+.landing-text-details { 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
