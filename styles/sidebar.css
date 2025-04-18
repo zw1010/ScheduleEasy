@@ -43,3 +43,7 @@
 .button-sidebar:hover {
     background-color: #BE8C14;  
 }
+
+.active {
+    font-weight: 700;
+}
