@@ -1,0 +1,44 @@
+.login-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin-right: 250px;
+}   
+
+.login-image-container {
+    width: 500px;   
+}
+
+.login-image {
+    display: block;
+    width: 100%;
+}
+
+.login-header {
+    margin-bottom: 10px;
+}
+
+.login-sub-header {
+    margin-bottom: 90px;
+}
+
+.login-user-input {
+    margin-bottom: 25px;
+}
+
+.login-user-pass {
+    margin-bottom: 20px;
+}
+
+.login-forgot-pass {
+    margin-bottom: 50px;
+}
+

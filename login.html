@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/login.css">
+
+    <title>Login</title>
+
+
+</head>
+<body>
+    <!-- Sidebar (Before Login) -->
+    <div class="sidebar-container">
+        <div class="sidebar-logo-container">
+            <button class="sidebar-logo font-med">Schedule <br> Easy.</button>    
+        </div>
+        <div class="sidebar-buttons-container">
+            <button class="button-sidebar font-small">Home</button>
+            <button class="button-sidebar font-small">Login</button>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-text-container">
+            <p class="login-header font-lg">Log in</p>
+            <p class="login-sub-header font-small">New? Sign up <a href="">here</a>!</p>
+
+            <label class="form-label-margin font-small" for="uname"><b>Username</b></label>
+            <input class="login-user-input form-input font-small" type="text" placeholder="Enter Username" name="uname" required>
+        
+            <label class="form-label-margin font-small" for="psw"><b>Password</b></label>
+            <input class=" login-user-pass form-input font-small" type="password" placeholder="Enter Password" name="psw" required>
+            
+            <a class="login-forgot-pass font-small" href="">Forgot Password?</a>
+
+            <button class="button-general font-small" type="submit">Login</button>
+            
+        </div>
+        <div class="login-image-container">
+           <img class="login-image" src="images/calender.jpg" at=""> 
+        </div>
+    </div>
+
+
+    <script src="scripts/landing.js" type="module"></script>
+</body>
+</html>
