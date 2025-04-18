@@ -1,0 +1,39 @@
+.signup-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.signup-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin-right: 250px;
+}   
+
+.signup-image-container {
+    width: 500px;   
+}
+
+.signup-image {
+    display: block;
+    width: 100%;
+}
+
+.signup-header {
+    margin-bottom: 70px;
+}
+
+.signup-user-input {
+    margin-bottom: 25px;
+}
+
+.signup-user-pass {
+    margin-bottom: 20px;
+}
+
+.signup-user-cfm-pass {
+    margin-bottom: 40px;
+}
