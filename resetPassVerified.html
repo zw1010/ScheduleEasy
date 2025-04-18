@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/resetpassVerified.css">
+
+    <title>Reset Password</title>
+
+
+</head>
+<body>
+    <!-- Sidebar (Before reset-pass-verified) -->
+    <div class="sidebar-container">
+        <div class="sidebar-logo-container">
+            <button class="sidebar-logo font-med js-outer-sidebar-logo">Schedule <br> Easy.</button>    
+        </div>
+        <div class="sidebar-buttons-container">
+            <button class="button-sidebar font-small js-outer-sidebar-home">Home</button>
+            <button class="button-sidebar font-small js-outer-sidebar-login">Login</button>
+        </div>
+    </div>
+
+    <form action="">
+        <div class="reset-pass-verified-container">
+            <div class="reset-pass-verified-text-container">
+                <p class="reset-pass-verified-header font-lg">Reset Password</p>
+    
+                <label class="form-label-margin font-small" for="psw"><b>New Password</b></label>
+                <input class=" reset-pass-verified-pass-input form-input font-small" type="password" name="psw" required>
+                
+                <label class="form-label-margin font-small" for="cfm-psw"><b>Confirm New Password</b></label>
+                <input class="reset-pass-verified-user-cfm-pass-input form-input font-small" type="password" name="cfm-psw" required>
+    
+                <button class="button-general font-small" type="submit">Go</button>
+                
+            </div>
+            <div class="reset-pass-verified-image-container">
+               <img class="reset-pass-verified-image" src="images/resetPassVerified.jpg" at=""> 
+            </div>
+        </div>    
+    </form>
+
+    <script src="scripts/resetPassVerified.js" type="module"></script>
+</body>
+</html>

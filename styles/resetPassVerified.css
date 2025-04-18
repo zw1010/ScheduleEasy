@@ -1,0 +1,36 @@
+.reset-pass-verified-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.reset-pass-verified-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin-right: 250px;
+}   
+
+.reset-pass-verified-image-container {
+    width: 430px;   
+}
+
+.reset-pass-verified-image {
+    display: block;
+    width: 100%;
+}
+
+.reset-pass-verified-header {
+    margin-bottom: 70px;
+}
+
+
+.reset-pass-verified-pass-input {
+    margin-bottom: 20px;
+}
+
+.reset-pass-verified-user-cfm-pass-input {
+    margin-bottom: 40px;
+}
