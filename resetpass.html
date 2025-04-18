@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/sidebar.css">
-    <link rel="stylesheet" href="styles/signup.css">
+    <link rel="stylesheet" href="styles/resetpass.css">
 
-    <title>Sign Up</title>
+    <title>Reset Password</title>
 
 
 </head>
 <body>
-    <!-- Sidebar (Before signup) -->
+    <!-- Sidebar (Before reset-pass) -->
     <div class="sidebar-container">
         <div class="sidebar-logo-container">
             <button class="sidebar-logo font-med js-outer-sidebar-logo">Schedule <br> Easy.</button>    
@@ -24,28 +24,29 @@
     </div>
 
     <form action="">
-        <div class="signup-container">
-            <div class="signup-text-container">
-                <p class="signup-header font-lg">Sign Up</p>
+        <div class="reset-pass-container">
+            <div class="reset-pass-text-container">
+                <p class="reset-pass-header font-lg">Reset Password</p>
     
                 <label class="form-label-margin font-small" for="uname"><b>Email</b></label>
-                <input class="signup-user-input form-input font-small" type="text" name="uname" required>
+                <div class="reset-pass-email-container">
+                    <input class="reset-pass-email-input form-input font-small" type="text" name="uname" required>
+                    <button class="button-general font-small" id="reset-pass-email-button" type="button">Send Code</button>
+                </div>
             
-                <label class="form-label-margin font-small" for="psw"><b>Password</b></label>
-                <input class=" signup-user-pass form-input font-small" type="password" name="psw" required>
-                
-                <label class="form-label-margin font-small" for="cfm-psw"><b>Confirm Password</b></label>
-                <input class="signup-user-cfm-pass form-input font-small" type="password" name="cfm-psw" required>
+                <label class="form-label-margin font-small" for="code"><b>Code</b></label>
+                <input class="reset-pass-code-input form-input font-small" name="code" required>
     
                 <button class="button-general font-small" type="submit">Go</button>
                 
             </div>
-            <div class="signup-image-container">
-               <img class="signup-image" src="images/signup.jpg" at=""> 
+            <div class="reset-pass-image-container">
+               <img class="reset-pass-image" src="images/resetPassword.jpg" at=""> 
             </div>
-        </div>    
+        </div>     
     </form>
 
-    <script src="scripts/signup.js" type="module"></script>
+
+    <script src="scripts/resetpass.js" type="module"></script>
 </body>
 </html>

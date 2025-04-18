@@ -1,3 +1,8 @@
 import { handleOuterSidebarButtons } from "./sidebar.js";
 
-handleOuterSidebarButtons();    
+handleOuterSidebarButtons();
+
+document.querySelector('.landing-start-button')
+    .addEventListener('click', () => {
+        window.location.href = "login.html";
+    });

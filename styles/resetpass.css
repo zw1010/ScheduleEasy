@@ -1,0 +1,48 @@
+.reset-pass-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.reset-pass-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    margin-right: 250px;
+}   
+
+.reset-pass-image-container {
+    width: 450px;   
+}
+
+.reset-pass-image {
+    display: block;
+    width: 100%;
+}
+
+.reset-pass-header {
+    margin-bottom: 70px;
+}
+
+.reset-pass-email-container {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.reset-pass-email-input {
+    flex: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#reset-pass-email-button {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.reset-pass-code-input {
+    margin-bottom: 40px;
+}

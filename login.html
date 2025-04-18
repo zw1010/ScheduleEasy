@@ -23,27 +23,28 @@
         </div>
     </div>
 
-    <div class="login-container">
-        <div class="login-text-container">
-            <p class="login-header font-lg">Log in</p>
-            <p class="login-sub-header font-small">New? Sign up <a href="signup.html">here</a>!</p>
-
-            <label class="form-label-margin font-small" for="uname"><b>Email</b></label>
-            <input class="login-user-input form-input font-small" type="text" name="uname" required>
-        
-            <label class="form-label-margin font-small" for="psw"><b>Password</b></label>
-            <input class=" login-user-pass form-input font-small" type="password" name="psw" required>
+    <form action="">
+        <div class="login-container">
+            <div class="login-text-container">
+                <p class="login-header font-lg">Log in</p>
+                <p class="login-sub-header font-small">New? Sign up <a href="signup.html">here</a>!</p>
+    
+                <label class="form-label-margin font-small" for="uname"><b>Email</b></label>
+                <input class="login-user-input form-input font-small" type="text" name="uname" required>
             
-            <a class="login-forgot-pass font-small" href="">Forgot Password?</a>
-
-            <button class="button-general font-small" type="submit">Go</button>
-            
+                <label class="form-label-margin font-small" for="psw"><b>Password</b></label>
+                <input class=" login-pass-input form-input font-small" type="password" name="psw" required>
+                
+                <a class="login-forgot-pass font-small" href="resetpass.html">Forgot Password?</a>
+    
+                <button class="button-general font-small" type="submit">Go</button>
+                
+            </div>
+            <div class="login-image-container">
+               <img class="login-image" src="images/login.jpg" at=""> 
+            </div>
         </div>
-        <div class="login-image-container">
-           <img class="login-image" src="images/login.jpg" at=""> 
-        </div>
-    </div>
-
+    </form>
 
     <script src="scripts/login.js" type="module"></script>
 </body>
