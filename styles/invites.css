@@ -1,0 +1,79 @@
+.group-invites-title {
+    margin-left: 160px;
+    margin-top: 70px;
+    margin-bottom: 45px;
+}
+
+.group-invites-grid-container {
+    display: grid;
+    grid-template-columns: 390px 370px 370px;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 160px;
+    row-gap: 55px;
+}
+
+.group-invites-grid-item-top {  
+    background-color: #4E1F00;
+    padding: 25px 35px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.group-invites-grid-item-header {
+    color: #F8F4E1;
+    margin-bottom: 35px;
+
+}
+
+.group-invites-members-grid-container {
+    display: grid;
+    grid-template-columns: 42px 42px 42px 42px 42px 42px;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.group-invites-members-img {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.group-invites-members-more {
+    align-self: center;
+    text-align: center;
+}
+
+.group-invites-grid-item-bottom {
+    display: flex;
+}
+
+#group-invites-accept-button {
+    flex: 1;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 15px;
+    box-shadow: none;
+    background-color: #4BD33F;
+}
+
+#group-invites-accept-button:hover {
+    background-color: #319728;
+}
+
+#group-invites-reject-button {
+    flex: 1;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    box-shadow: none;
+    background-color: #E92E2E;
+}
+
+#group-invites-reject-button:hover {
+    background-color: #b92727;
+}
