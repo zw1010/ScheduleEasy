@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <!-- Sidebar (Before signup) -->
+    <!-- Sidebar (After signup) -->
     <div class="sidebar-container">
         <div class="sidebar-logo-container">
             <button class="sidebar-logo font-med js-inner-sidebar-logo">Schedule <br> Easy.</button>    
@@ -28,7 +28,53 @@
         </nav>
 
         <button class="button-sidebar-profile button-sidebar font-small js-inner-sidebar-profile active">Profile</button>
-     </div>
+    </div>
+
+    
+    <div class="profile-header-container">
+        <p class="font-lg">Welcome, Peter!</p>
+        <div class="profile-header-img-container">
+            <img class="profile-header-img" src="images/profile.jpg" alt="">
+            <form action="">
+                <label for="profile-image">
+                    <div class="profile-header-img-overlay">
+                        <img src="images/camera-icon.png" alt="">
+                    </div> 
+                </label>
+                <input class="profile-header-img-input" type="file" id="profile-image" name="profile-image" accept="image/*">
+            </form>
+        </div>
+    </div>
+
+    <div class="profile-main-container">
+        <form action="">
+            <div class="profile-main-left">
+                <p class="profile-email-header font-small"><b>Email</b></p>
+                <p class="profile-email font-small">abc@gmail.com</p>
+
+
+                <label class="form-label-margin font-small" for="name"><b>Display Name</b></label>
+                <input class="profile-name form-input font-small" name="name" required>
+
+                <button class="button-general font-small" type="submit">Change</button>
+            </div>
+        </form>
+
+        <form action="">
+            <div class="profile-main-right">
+                <label class="form-label-margin font-small" for="oldPass"><b>Old Password</b></label>
+                <input class="profile-pass-old form-input-margin form-input font-small" type="password" name="oldPass" required>
+            
+                <label class="form-label-margin font-small" for="newPass"><b>New Password</b></label>
+                <input class="form-input-margin form-input font-small" type="password" name="newPass" required>
+                
+                <label class="form-label-margin font-small" for="newPassCfm"><b>Confirm New Password</b></label>
+                <input class="profile-pass-new-cfm form-input font-small" type="password" name="newPassCfm" required>
+
+                <button class="button-general font-small" type="submit">Change</button>
+            </div>
+        </form>
+    </div>
 
     <script src="scripts/profile.js" type="module"></script>
 </body>

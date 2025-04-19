@@ -48,6 +48,10 @@ img {
     margin-bottom: 15px;
 }
 
+.form-input-margin {
+    margin-bottom: 25px;
+}
+
 .form-input {
     background-color: #F8F4E1;
     border: 0;
