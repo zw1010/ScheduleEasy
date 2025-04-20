@@ -1,0 +1,96 @@
+.invites-details-header-container {
+    background-color: #4E1F00;
+    display: flex;
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-bottom: 50px;
+    height: 270px;
+}
+
+.invites-details-title {
+    color: #F8F4E1;
+}
+
+.invites-details-header {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+#invites-details-reject-button {
+    background-color: #E92E2E;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+#invites-details-accept-button {    
+    background-color: #4BD33F;
+}
+
+#invites-details-reject-button:hover {
+    background-color: #b92727;
+    margin-left: auto;
+}
+
+#invites-details-accept-button:hover {
+    background-color: #319728;
+}
+
+.invites-details-main-container {
+    display: flex;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.invite-details-left-title {
+    margin-bottom: 30px;
+}
+
+.invites-details-members-grid {
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px;
+    column-gap: 30px;
+    row-gap: 15px;
+}
+
+.invites-details-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.invites-details-grid-item > img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 7px;
+}
+
+.invites-details-main-right {
+    width: 300px;
+    margin-left: auto;
+}
+
+.invite-details-right-title {
+    margin-bottom: 30px;
+}
+
+.invites-details-owner-container {
+    display: flex;
+    align-items: center;
+}
+
+.invites-details-owner-container > img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+

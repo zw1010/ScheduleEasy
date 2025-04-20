@@ -4,7 +4,7 @@
     align-items: center;
     padding-left: 160px;
     padding-right: 160px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     height: 270px;
 }
 
@@ -65,7 +65,7 @@
 .profile-main-left {
     display: flex;
     flex-direction: column;
-    margin-right: 200px;
+    margin-right: 250px;
 }
 
 .profile-email-header {
