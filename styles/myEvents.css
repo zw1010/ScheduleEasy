@@ -1,0 +1,96 @@
+
+.my-events-header-container {
+    display: flex;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 70px;
+    margin-bottom: 45px;
+}
+
+.my-events-create-button {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.my-events-edit-button {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.my-events-grid-container {
+    display: grid;
+    grid-template-columns: 390px 390px 390px;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 160px;
+    row-gap: 50px;
+}
+
+.my-events-grid-item  {
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px; 
+}
+
+.my-events-overlay {
+    opacity: 0;
+    background-color: #00000020;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 15px;
+    transition: opacity 0.15s;
+    cursor: pointer;
+}
+    
+.my-events-grid-item-top {
+    background-color: #4E1F00;
+    padding: 20px 35px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;  
+}
+
+.my-events-grid-item-top p {
+    color: #F8F4E1;
+}
+
+.my-events-grid-item-header {
+    margin-bottom: 5px;
+}
+
+.my-events-grid-item-bottom {
+    background-color: #F8F4E1;
+    padding: 20px 35px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.my-events-date-container, .my-events-time-container, .my-events-location-container {
+    display: flex;
+    align-items: center;
+}
+
+.my-events-date-container, .my-events-time-container {
+    margin-bottom: 10px;
+}
+
+
+.my-events-date-container > img {
+    width: 35px;
+    box-shadow: none;
+    margin-right: 7px;
+}
+
+.my-events-time-container > img {
+    width: 35px;
+    box-shadow: none;
+    margin-right: 7px;
+}
+
+.my-events-location-container > img {
+    width: 33px;
+    box-shadow: none;
+    margin-right: 9px;
+}

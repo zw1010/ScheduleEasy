@@ -13,6 +13,11 @@
     row-gap: 50px;
 }
 
+.group-invites-grid-item {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
 .group-invites-grid-item-top {  
     position: relative;
     background-color: #4E1F00;
@@ -71,11 +76,6 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 15px;
     box-shadow: none;
-    background-color: #4BD33F;
-}
-
-#group-invites-accept-button:hover {
-    background-color: #319728;
 }
 
 #group-invites-reject-button {
@@ -85,9 +85,4 @@
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 15px;
     box-shadow: none;
-    background-color: #E92E2E;
-}
-
-#group-invites-reject-button:hover {
-    background-color: #b92727;
 }
