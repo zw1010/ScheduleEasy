@@ -6,7 +6,6 @@ handleHeaderImgHover();
 function handleHeaderImgHover() {
     const imgOverlay = document.querySelector('.profile-header-img-overlay');
     imgOverlay.addEventListener('mouseover', () => {
-        console.log("test");
         imgOverlay.style.opacity = "1";
 
     });
