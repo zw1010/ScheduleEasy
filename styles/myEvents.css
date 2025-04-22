@@ -21,12 +21,19 @@
     display: grid;
     grid-template-columns: 390px 390px 390px;
     justify-content: space-between;
+    row-gap: 50px;
     margin-left: 160px;
     margin-right: 160px;
-    row-gap: 50px;
+    margin-bottom: 70px;
 }
 
 .my-events-grid-item  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-events-grid-item-main {
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     border-radius: 15px; 
@@ -80,17 +87,22 @@
 .my-events-date-container > img {
     width: 35px;
     box-shadow: none;
-    margin-right: 7px;
+    margin-right: 10px;
 }
 
 .my-events-time-container > img {
     width: 35px;
     box-shadow: none;
-    margin-right: 7px;
+    margin-right: 10px;
 }
 
 .my-events-location-container > img {
     width: 33px;
     box-shadow: none;
-    margin-right: 9px;
+    margin-right: 12px;
+}
+
+.my-events-delete-button {
+    display: none;
+    margin-top: 15px;
 }

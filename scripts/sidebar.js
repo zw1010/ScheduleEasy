@@ -33,7 +33,7 @@ export function handleInnerSidebarButtons() {
         window.location.href = "schedule.html";
     });
     eventsBtn.addEventListener('click', () => {
-        window.location.href = "events.html";
+        window.location.href = "myEvents.html";
     });
     groupsBtn.addEventListener('click', () => {
         window.location.href = "groups.html";

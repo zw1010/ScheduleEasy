@@ -21,9 +21,9 @@
             <div class="sidebar-buttons-container">
                 <button class="button-sidebar font-small js-inner-sidebar-home">Home</button>
                 <button class="button-sidebar font-small js-inner-sidebar-schedule">Schedule</button>
-                <button class="button-sidebar font-small js-inner-sidebar-events">My Events</button>
+                <button class="button-sidebar font-small js-inner-sidebar-events active">My Events</button>
                 <button class="button-sidebar font-small js-inner-sidebar-groups">Groups</button>
-                <button class="button-sidebar font-small js-inner-sidebar-invites active">Invitations</button>
+                <button class="button-sidebar font-small js-inner-sidebar-invites">Invitations</button>
             </div>
         </nav>
 
@@ -33,177 +33,201 @@
     <div class="my-events-header-container">
         <p class="my-events-title font-lg">My Events</p>
         <button class="my-events-create-button button-green font-small">Create &#43;</button>
-        <button class="my-events-edit-button button-general font-small">Edit</button>
+        <button class="my-events-edit-button button-general font-small js-my-events-edit-button">Edit</button>
     </div>
     <div class="my-events-grid-container">
         <div class="my-events-grid-item">
-            <div class="my-events-grid-item-top">
-                <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
-                <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+            <div class="my-events-grid-item-main">
+                <div class="my-events-grid-item-top">
+                    <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
+                    <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+                </div>
+                <div class="my-events-grid-item-bottom">
+                    <div class="my-events-date-container">
+                        <img src="images/calender-icon.png" alt="">
+                        <p class="font-small">1 April 2025</p>
+                    </div>
+                    <div class="my-events-time-container">
+                        <img src="images/clock-icon.png" alt="">
+                        <p class="font-small">12PM - 2PM</p>
+                    </div>
+                    <div class="my-events-location-container">
+                        <img src="images/location-icon.png" alt="">
+                        <p class="font-small">Boon Lay Food Village</p>
+                    </div>
+                </div>
+                <div class="my-events-overlay js-my-events-overlay"></div>
             </div>
-            <div class="my-events-grid-item-bottom">
-                <div class="my-events-date-container">
-                    <img src="images/calender-icon.png" alt="">
-                    <p class="font-small">1 April 2025</p>
-                </div>
-                <div class="my-events-time-container">
-                    <img src="images/clock-icon.png" alt="">
-                    <p class="font-small">12PM - 2PM</p>
-                </div>
-                <div class="my-events-location-container">
-                    <img src="images/location-icon.png" alt="">
-                    <p class="font-small">Boon Lay Food Village</p>
-                </div>
-            </div>
-            <div class="my-events-overlay js-my-events-overlay"></div>
+            <button class="my-events-delete-button button-red font-small js-my-events-delete-button">Delete</button>
         </div>  
         <div class="my-events-grid-item">
-            <div class="my-events-grid-item-top">
-                <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
-                <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+            <div class="my-events-grid-item-main">
+                <div class="my-events-grid-item-top">
+                    <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
+                    <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+                </div>
+                <div class="my-events-grid-item-bottom">
+                    <div class="my-events-date-container">
+                        <img src="images/calender-icon.png" alt="">
+                        <p class="font-small">1 April 2025</p>
+                    </div>
+                    <div class="my-events-time-container">
+                        <img src="images/clock-icon.png" alt="">
+                        <p class="font-small">12PM - 2PM</p>
+                    </div>
+                    <div class="my-events-location-container">
+                        <img src="images/location-icon.png" alt="">
+                        <p class="font-small">Boon Lay Food Village</p>
+                    </div>
+                </div>
+                <div class="my-events-overlay js-my-events-overlay"></div>
             </div>
-            <div class="my-events-grid-item-bottom">
-                <div class="my-events-date-container">
-                    <img src="images/calender-icon.png" alt="">
-                    <p class="font-small">1 April 2025</p>
-                </div>
-                <div class="my-events-time-container">
-                    <img src="images/clock-icon.png" alt="">
-                    <p class="font-small">12PM - 2PM</p>
-                </div>
-                <div class="my-events-location-container">
-                    <img src="images/location-icon.png" alt="">
-                    <p class="font-small">Boon Lay Food Village</p>
-                </div>
-            </div>
-            <div class="my-events-overlay js-my-events-overlay"></div>
+            <button class="my-events-delete-button button-red font-small js-my-events-delete-button">Delete</button>
         </div>  
         <div class="my-events-grid-item">
-            <div class="my-events-grid-item-top">
-                <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
-                <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+            <div class="my-events-grid-item-main">
+                <div class="my-events-grid-item-top">
+                    <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
+                    <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+                </div>
+                <div class="my-events-grid-item-bottom">
+                    <div class="my-events-date-container">
+                        <img src="images/calender-icon.png" alt="">
+                        <p class="font-small">1 April 2025</p>
+                    </div>
+                    <div class="my-events-time-container">
+                        <img src="images/clock-icon.png" alt="">
+                        <p class="font-small">12PM - 2PM</p>
+                    </div>
+                    <div class="my-events-location-container">
+                        <img src="images/location-icon.png" alt="">
+                        <p class="font-small">Boon Lay Food Village</p>
+                    </div>
+                </div>
+                <div class="my-events-overlay js-my-events-overlay"></div>
             </div>
-            <div class="my-events-grid-item-bottom">
-                <div class="my-events-date-container">
-                    <img src="images/calender-icon.png" alt="">
-                    <p class="font-small">1 April 2025</p>
-                </div>
-                <div class="my-events-time-container">
-                    <img src="images/clock-icon.png" alt="">
-                    <p class="font-small">12PM - 2PM</p>
-                </div>
-                <div class="my-events-location-container">
-                    <img src="images/location-icon.png" alt="">
-                    <p class="font-small">Boon Lay Food Village</p>
-                </div>
-            </div>
-            <div class="my-events-overlay js-my-events-overlay"></div>
+            <button class="my-events-delete-button button-red font-small js-my-events-delete-button">Delete</button>
         </div>  
         <div class="my-events-grid-item">
-            <div class="my-events-grid-item-top">
-                <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
-                <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+            <div class="my-events-grid-item-main">
+                <div class="my-events-grid-item-top">
+                    <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
+                    <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+                </div>
+                <div class="my-events-grid-item-bottom">
+                    <div class="my-events-date-container">
+                        <img src="images/calender-icon.png" alt="">
+                        <p class="font-small">1 April 2025</p>
+                    </div>
+                    <div class="my-events-time-container">
+                        <img src="images/clock-icon.png" alt="">
+                        <p class="font-small">12PM - 2PM</p>
+                    </div>
+                    <div class="my-events-location-container">
+                        <img src="images/location-icon.png" alt="">
+                        <p class="font-small">Boon Lay Food Village</p>
+                    </div>
+                </div>
+                <div class="my-events-overlay js-my-events-overlay"></div>
             </div>
-            <div class="my-events-grid-item-bottom">
-                <div class="my-events-date-container">
-                    <img src="images/calender-icon.png" alt="">
-                    <p class="font-small">1 April 2025</p>
-                </div>
-                <div class="my-events-time-container">
-                    <img src="images/clock-icon.png" alt="">
-                    <p class="font-small">12PM - 2PM</p>
-                </div>
-                <div class="my-events-location-container">
-                    <img src="images/location-icon.png" alt="">
-                    <p class="font-small">Boon Lay Food Village</p>
-                </div>
-            </div>
-            <div class="my-events-overlay js-my-events-overlay"></div>
+            <button class="my-events-delete-button button-red font-small js-my-events-delete-button">Delete</button>
         </div>  
         <div class="my-events-grid-item">
-            <div class="my-events-grid-item-top">
-                <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
-                <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+            <div class="my-events-grid-item-main">
+                <div class="my-events-grid-item-top">
+                    <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
+                    <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+                </div>
+                <div class="my-events-grid-item-bottom">
+                    <div class="my-events-date-container">
+                        <img src="images/calender-icon.png" alt="">
+                        <p class="font-small">1 April 2025</p>
+                    </div>
+                    <div class="my-events-time-container">
+                        <img src="images/clock-icon.png" alt="">
+                        <p class="font-small">12PM - 2PM</p>
+                    </div>
+                    <div class="my-events-location-container">
+                        <img src="images/location-icon.png" alt="">
+                        <p class="font-small">Boon Lay Food Village</p>
+                    </div>
+                </div>
+                <div class="my-events-overlay js-my-events-overlay"></div>
             </div>
-            <div class="my-events-grid-item-bottom">
-                <div class="my-events-date-container">
-                    <img src="images/calender-icon.png" alt="">
-                    <p class="font-small">1 April 2025</p>
-                </div>
-                <div class="my-events-time-container">
-                    <img src="images/clock-icon.png" alt="">
-                    <p class="font-small">12PM - 2PM</p>
-                </div>
-                <div class="my-events-location-container">
-                    <img src="images/location-icon.png" alt="">
-                    <p class="font-small">Boon Lay Food Village</p>
-                </div>
-            </div>
-            <div class="my-events-overlay js-my-events-overlay"></div>
+            <button class="my-events-delete-button button-red font-small js-my-events-delete-button">Delete</button>
         </div>  
         <div class="my-events-grid-item">
-            <div class="my-events-grid-item-top">
-                <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
-                <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+            <div class="my-events-grid-item-main">
+                <div class="my-events-grid-item-top">
+                    <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
+                    <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+                </div>
+                <div class="my-events-grid-item-bottom">
+                    <div class="my-events-date-container">
+                        <img src="images/calender-icon.png" alt="">
+                        <p class="font-small">1 April 2025</p>
+                    </div>
+                    <div class="my-events-time-container">
+                        <img src="images/clock-icon.png" alt="">
+                        <p class="font-small">12PM - 2PM</p>
+                    </div>
+                    <div class="my-events-location-container">
+                        <img src="images/location-icon.png" alt="">
+                        <p class="font-small">Boon Lay Food Village</p>
+                    </div>
+                </div>
+                <div class="my-events-overlay js-my-events-overlay"></div>
             </div>
-            <div class="my-events-grid-item-bottom">
-                <div class="my-events-date-container">
-                    <img src="images/calender-icon.png" alt="">
-                    <p class="font-small">1 April 2025</p>
-                </div>
-                <div class="my-events-time-container">
-                    <img src="images/clock-icon.png" alt="">
-                    <p class="font-small">12PM - 2PM</p>
-                </div>
-                <div class="my-events-location-container">
-                    <img src="images/location-icon.png" alt="">
-                    <p class="font-small">Boon Lay Food Village</p>
-                </div>
-            </div>
-            <div class="my-events-overlay js-my-events-overlay"></div>
+            <button class="my-events-delete-button button-red font-small js-my-events-delete-button">Delete</button>
         </div>  
         <div class="my-events-grid-item">
-            <div class="my-events-grid-item-top">
-                <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
-                <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+            <div class="my-events-grid-item-main">
+                <div class="my-events-grid-item-top">
+                    <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
+                    <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+                </div>
+                <div class="my-events-grid-item-bottom">
+                    <div class="my-events-date-container">
+                        <img src="images/calender-icon.png" alt="">
+                        <p class="font-small">1 April 2025</p>
+                    </div>
+                    <div class="my-events-time-container">
+                        <img src="images/clock-icon.png" alt="">
+                        <p class="font-small">12PM - 2PM</p>
+                    </div>
+                    <div class="my-events-location-container">
+                        <img src="images/location-icon.png" alt="">
+                        <p class="font-small">Boon Lay Food Village</p>
+                    </div>
+                </div>
+                <div class="my-events-overlay js-my-events-overlay"></div>
             </div>
-            <div class="my-events-grid-item-bottom">
-                <div class="my-events-date-container">
-                    <img src="images/calender-icon.png" alt="">
-                    <p class="font-small">1 April 2025</p>
-                </div>
-                <div class="my-events-time-container">
-                    <img src="images/clock-icon.png" alt="">
-                    <p class="font-small">12PM - 2PM</p>
-                </div>
-                <div class="my-events-location-container">
-                    <img src="images/location-icon.png" alt="">
-                    <p class="font-small">Boon Lay Food Village</p>
-                </div>
-            </div>
-            <div class="my-events-overlay js-my-events-overlay"></div>
+            <button class="my-events-delete-button button-red font-small js-my-events-delete-button">Delete</button>
         </div>  
         <div class="my-events-grid-item">
-            <div class="my-events-grid-item-top">
-                <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
-                <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+            <div class="my-events-grid-item-main">
+                <div class="my-events-grid-item-top">
+                    <p class="my-events-grid-item-header font-small"><b>Dinner at Boon Lay</b></p>
+                    <p class="my-events-grid-item-sub-header font-small">Group 1</p>
+                </div>
+                <div class="my-events-grid-item-bottom">
+                    <div class="my-events-date-container">
+                        <img src="images/calender-icon.png" alt="">
+                        <p class="font-small">1 April 2025</p>
+                    </div>
+                    <div class="my-events-time-container">
+                        <img src="images/clock-icon.png" alt="">
+                        <p class="font-small">12PM - 2PM</p>
+                    </div>
+                    <div class="my-events-location-container">
+                        <img src="images/location-icon.png" alt="">
+                        <p class="font-small">Boon Lay Food Village</p>
+                    </div>
+                </div>
+                <div class="my-events-overlay js-my-events-overlay"></div>
             </div>
-            <div class="my-events-grid-item-bottom">
-                <div class="my-events-date-container">
-                    <img src="images/calender-icon.png" alt="">
-                    <p class="font-small">1 April 2025</p>
-                </div>
-                <div class="my-events-time-container">
-                    <img src="images/clock-icon.png" alt="">
-                    <p class="font-small">12PM - 2PM</p>
-                </div>
-                <div class="my-events-location-container">
-                    <img src="images/location-icon.png" alt="">
-                    <p class="font-small">Boon Lay Food Village</p>
-                </div>
-            </div>
-            <div class="my-events-overlay js-my-events-overlay"></div>
-        </div>  
+            <button class="my-events-delete-button button-red font-small js-my-events-delete-button">Delete</button>
+        </div>    
     </div>
 
     <script src="scripts/myEvents.js" type="module"></script>

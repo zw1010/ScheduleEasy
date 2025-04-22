@@ -8,9 +8,10 @@
     display: grid;
     grid-template-columns: 390px 390px 390px;
     justify-content: space-between;
+    row-gap: 50px;
     margin-left: 160px;
     margin-right: 160px;
-    row-gap: 50px;
+    margin-bottom: 70px;
 }
 
 .group-invites-grid-item {
