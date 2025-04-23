@@ -1,8 +1,11 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding-left: 322px;
-    box-sizing: border-box;
 }
 
 p {
@@ -15,6 +18,10 @@ a {
 
 img {
     box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.2); 
+}
+
+textarea {
+    resize: none;
 }
 
 .font-lg {

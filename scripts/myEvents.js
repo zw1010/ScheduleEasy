@@ -29,14 +29,14 @@ function handleEditButton() {
             deleteBtns.forEach((deleteBtn) => {
                 deleteBtn.style.display = "block";
                 editBtn.innerHTML = "Done";
-            })
+            });
         }
         else if (editBtn.innerHTML === "Done") {
             const deleteBtns = document.querySelectorAll('.js-my-events-delete-button');
             deleteBtns.forEach((deleteBtn) => {
                 deleteBtn.style.display = "none";
                 editBtn.innerHTML = "Edit";
-            })
+            });
         }
-    })
+    });
 }

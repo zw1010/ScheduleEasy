@@ -1,9 +1,12 @@
 .invites-details-header-container {
     background-color: #4E1F00;
     display: flex;
+    position: fixed;
+    left: 322px;
+    right: 0;
+    top:0;
     padding-left: 160px;
     padding-right: 160px;
-    margin-bottom: 50px;
     height: 270px;
 }
 
@@ -42,6 +45,7 @@
     display: flex;
     padding-left: 160px;
     padding-right: 160px;
+    margin-top: 320px;
 }
 
 .invite-details-left-title {
