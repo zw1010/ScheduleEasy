@@ -1,4 +1,4 @@
-.my-events-details-header-container {
+.home-events-details-header-container {
     background-color: #4E1F00;
     display: flex;
     position: fixed;
@@ -11,26 +11,30 @@
     height: 270px;
 }
 
-.my-events-details-header {
+.home-events-details-header {
     display: flex;
     align-items: center; 
 }
 
-.my-events-details-header-left {
+.home-events-details-header-left {
     display: flex;
     flex-direction: column;
 }
 
-.my-events-form-title {
-    width: 800px;
+.home-events-details-header-left p {
+    color: #F8F4E1;
+}
+
+.home-events-title {
+    width: 650px;
     margin-bottom: 20px;
 }
 
-.my-events-form-select-container img {
+.home-events-form-select-container img {
     display: block;
 }
 
-.my-events-form-select-container > select {
+.home-events-form-select-container > select {
     appearance: none;
     border: 0;
     background-color: #FEBA17;
@@ -46,11 +50,11 @@
     cursor: pointer;
 }
 
-.my-events-create-button {
+.home-events-create-button {
     margin-left: auto;
 }
 
-.my-events-main-container {
+.home-events-main-container {
     display: flex;
     margin-top: 310px;
     margin-bottom: 40px;
@@ -58,62 +62,48 @@
     padding-right: 100px;
 }
 
-.my-events-main-left {
+.home-events-main-left {
     display: flex;
     flex-direction: column;
-    width: 800px;
+    width: 650px;
     margin-right: auto;
 }
 
-.my-events-desc-textarea, .my-events-loc-textarea {
+.home-events-loc-header {
+    margin-top: 60px;;
+}
+
+.home-events-loc-text {
+margin-bottom: 60px;
+}
+
+.home-events-datetime-container {
+    display: flex;
+}
+
+.home-events-time-container {
+    margin-left: 95px;
+    margin-right: 95px;
+}
+
+.home-events-members-container {
     margin-bottom: 60px;
 }
 
-.my-events-datetime-container {
-    display: flex;
-    margin-bottom: 60px;
-}
-
-.my-events-date-container, .my-events-time-container, .my-events-duration-container {
-    display: flex;
-    flex-direction: column;
-}   
-
-.my-events-time-container {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.my-events-time-input-container {
-    display: flex;
-    align-items: center;
-}
-
-.my-events-time-input-seperator {
-    width: 10px;
-    border-top: 3px solid black;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.my-events-members-container {
-    margin-bottom: 60px;
-}
-
-.my-events-members-grid {
+.home-events-members-grid {
     display: grid;
     grid-template-columns: 70px 70px 70px 70px 70px;
     column-gap: 30px;
     row-gap: 15px;
 }
 
-.my-events-members-grid-item {
+.home-events-members-grid-item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.my-events-members-grid-item > img {
+.home-events-members-grid-item > img {
     display: block;
     width: 70px;
     height: 70px;

@@ -78,6 +78,9 @@ textarea {
     background-color: #b92727;
 }
 
+.text-header-margin {
+    margin-bottom: 10px;
+}
 
 .form-label-margin {
     margin-bottom: 15px;
