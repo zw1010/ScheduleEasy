@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebarInner.css">
+    <link rel="stylesheet" href="styles/schedule.css">
+
+    <title>Home</title>
+
+
+</head>
+<body>
+    <!-- Sidebar (After signup) -->
+    <div class="sidebar-container">
+        <div class="sidebar-logo-container">
+            <button class="sidebar-logo font-med js-inner-sidebar-logo">Schedule <br> Easy.</button>    
+        </div>
+        <nav>
+            <div class="sidebar-buttons-container">
+                <button class="button-sidebar font-small js-inner-sidebar-home">Home</button>
+                <button class="button-sidebar font-small js-inner-sidebar-schedule active">Schedule</button>
+                <button class="button-sidebar font-small js-inner-sidebar-events">My Events</button>
+                <button class="button-sidebar font-small js-inner-sidebar-groups">Groups</button>
+                <button class="button-sidebar font-small js-inner-sidebar-invites">Invitations</button>
+            </div>
+        </nav>
+
+        <button class="button-sidebar-profile button-sidebar font-small js-inner-sidebar-profile">Profile</button>
+    </div>
+    
+    <div class="schedule-main-container">
+        <div class="schedule-calender-header-container">
+            <div class="schedule-month-container">
+                <p class="js-schedule-calender-date font-lg">April 2025</p>
+                <button class="schedule-left-button button-general js-schedule-left-button"><img src="images/arrow-left.svg" alt=""></button>
+                <button class="schedule-right-button button-general js-schedule-right-button"><img src="images/arrow-right.svg" alt=""></button>
+            </div>
+            <div class="schedule-group-select custom-dropdown">
+                <select class="font-small">
+                    <option>Group 1</option>
+                    <option>Group 2</option>
+                    <option>Group 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="schedule-calender-header-grid-container">
+            <p class="font-small"><b>Sun</b></p>
+            <p class="font-small"><b>Mon</b></p>
+            <p class="font-small"><b>Tues</b></p>
+            <p class="font-small"><b>Wed</b></p>
+            <p class="font-small"><b>Thurs</b></p>
+            <p class="font-small"><b>Fri</b></p>
+            <p class="font-small"><b>Sat</b></p>
+        </div>
+        <div class="schedule-calender-grid-container js-schedule-calender-grid-container">
+        </div>
+    </div>
+
+    <script src="scripts/Libaries/dayjs.min.js"></script>
+    <script src="scripts/schedule.js" type="module"></script>
+</body>
+</html>

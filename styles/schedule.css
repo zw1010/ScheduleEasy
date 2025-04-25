@@ -1,0 +1,91 @@
+.schedule-main-container {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.schedule-month-container {
+    display: flex;
+    width: 340px;
+}
+
+.schedule-left-button, .schedule-right-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.schedule-calender-header-container {
+    display: flex;
+}
+
+.schedule-left-button {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.schedule-left-button > img, .schedule-right-button > img {
+    box-shadow: none;
+    width: 22px;
+    height: 22px;
+}
+
+.schedule-group-select {
+    margin-left: auto;
+}
+
+.schedule-calender-header-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    margin-top: 55px;
+}
+
+.schedule-calender-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 0px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.schedule-calender-grid-item {
+    background-color: #F8F4E1;
+    aspect-ratio: 1;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    position: relative;
+}
+
+.schedule-calender-date {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.schedule-overlay {
+    opacity: 0;
+    background-color: #a19e8c36;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.15s;
+}
+
+.js-schedule-calender-date-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEBA17;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
