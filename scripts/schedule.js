@@ -5,7 +5,6 @@ let currentDate = dayjs();
 handleInnerSidebarButtons();
 renderCalender(currentDate);
 handleCalenderButtons();
-handleCalenderDayHover();
 
 function renderCalender(currentDate) {
     const monthPara = document.querySelector('.js-schedule-calender-date');
@@ -29,6 +28,8 @@ function renderCalender(currentDate) {
                 </div>`;
     }
     calenderContainer.innerHTML = html;
+    
+    handleCalenderDayHover();
 }
 
 function handleCalenderButtons() {
