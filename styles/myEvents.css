@@ -84,13 +84,7 @@
 }
 
 
-.my-events-date-container > img {
-    width: 35px;
-    box-shadow: none;
-    margin-right: 10px;
-}
-
-.my-events-time-container > img {
+.my-events-date-container > img, .my-events-time-container > img {
     width: 35px;
     box-shadow: none;
     margin-right: 10px;
