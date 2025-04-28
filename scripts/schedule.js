@@ -13,8 +13,24 @@ function renderCalender(currentDate) {
     // Set calender month to today's month
     monthPara.innerHTML = currentDate.format('MMM YYYY');
 
-    // Generate days of month (Grid items)
+    //// Generate days of month (Grid items)
+    // Create blank grid items
     let html = "";
+    const firstDay = currentDate.set('date', 1).format("ddd");
+    const headerDayList = document.querySelectorAll('.js-schedule-calender-header-day');
+    let flag = false;
+    headerDayList.forEach(dayElement => {
+        if (firstDay === dayElement.innerText) {
+            flag = true;
+        }
+        if (firstDay !== dayElement.innerText && flag===false) {
+            html += `
+                    <div></div>
+                    `;
+        }
+    });
+
+    // Create grid items
     for (let day = 1; day <= currentDate.daysInMonth(); day++) {
         const currentDayClass = currentDate.isSame(dayjs() , "day") && day === currentDate.date()
             ? "js-schedule-calender-date-container" : "";
@@ -26,7 +42,7 @@ function renderCalender(currentDate) {
                     </div>
                     <div class="schedule-overlay js-schedule-overlay" 
                         data-date="${day}"
-                        data-day="${dayjs().set('date', day).format("dddd")}"></div>
+                        data-day="${currentDate.set('date', day).format("dddd")}"></div>
                 </div>`;
     }
     calenderContainer.innerHTML = html;
