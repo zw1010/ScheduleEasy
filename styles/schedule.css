@@ -94,10 +94,26 @@
 .schedule-calender-day-container {
     background-color: #F8F4E1;
     padding: 60px;
+    margin-top: 55px;
+    border: 1px solid black;
 }
 
-.schedule-calender-day {
+.schedule-calender-day-header-container {
+    display: flex;
+    align-items: center;
     margin-bottom: 90px;
+}
+
+.schedule-calender-day-cross-button {
+    background-color: #F8F4E1;
+    border: 0;
+    padding: 0;
+    font-size: 50px;
+    cursor: pointer;
+    line-height: 0.8;
+    margin-left: auto;
+    color: #FEBA17;
+    font-weight: 00;
 }
 
 .schedule-calender-time-event-container {
