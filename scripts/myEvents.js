@@ -16,7 +16,7 @@ function handleEventDetailHover() {
         });
 
         eventDetail.addEventListener('click', () => {
-            window.location.href = "myEventsDetails.html";
+            window.location.href = "myEventTemplate.html";
         });
     });
 }

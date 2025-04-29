@@ -17,7 +17,7 @@ function handleEventDetailHover() {
         });
 
         eventDetail.addEventListener('click', () => {
-            window.location.href = "homeEventsDetails.html";
+            window.location.href = "otherEventTemplate.html";
         });
     });
 }
@@ -35,7 +35,7 @@ function handleMyEventsDetailsHover() {
         });
 
         eventDetail.addEventListener('click', () => {
-            window.location.href = "myEventsDetails.html";
+            window.location.href = "myEventTemplate.html";
         });
     });
 }
