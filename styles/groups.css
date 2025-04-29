@@ -1,0 +1,84 @@
+.groups-header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 70px;
+}
+
+.groups-create-button {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.other-groups-edit-button {
+    margin-left: auto;
+}
+
+.groups-grid-container {
+    display: grid;
+    grid-template-columns: 390px 390px 390px;
+    justify-content: space-between;
+    row-gap: 50px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 70px;
+}
+
+.groups-grid-item {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.groups-grid-item-main {  
+    position: relative;
+    background-color: #4E1F00;
+    padding: 25px 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.groups-overlay {
+    opacity: 0;
+    background-color: #0000003f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 15px;
+    transition: opacity 0.15s;
+    cursor: pointer;
+}
+
+.groups-grid-item-header {
+    color: #F8F4E1;
+    margin-bottom: 35px;
+}
+
+.groups-members-grid-container {
+    display: grid;
+    grid-template-columns: 42px 42px 42px 42px 42px 42px;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.groups-members-img {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.groups-members-more {
+    align-self: center;
+    text-align: center;
+}
+
+.groups-delete-button {
+    display: none;
+    margin-top: 15px;
+}

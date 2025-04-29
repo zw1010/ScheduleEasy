@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebarInner.css">
+    <link rel="stylesheet" href="styles/groups.css">
+
+    <title>Invitations</title>
+
+
+</head>
+<body>
+    <!-- Sidebar (After signup) -->
+    <div class="sidebar-container">
+        <div class="sidebar-logo-container">
+            <button class="sidebar-logo font-med js-inner-sidebar-logo">Schedule <br> Easy.</button>    
+        </div>
+        <nav>
+            <div class="sidebar-buttons-container">
+                <button class="button-sidebar font-small js-inner-sidebar-home">Home</button>
+                <button class="button-sidebar font-small js-inner-sidebar-schedule">Schedule</button>
+                <button class="button-sidebar font-small js-inner-sidebar-events">My Events</button>
+                <button class="button-sidebar font-small js-inner-sidebar-groups active">Groups</button>
+                <button class="button-sidebar font-small js-inner-sidebar-invites">Invitations</button>
+            </div>
+        </nav>
+
+        <button class="button-sidebar-profile button-sidebar font-small js-inner-sidebar-profile">Profile</button>
+    </div>
+
+    <!-- Main  -->
+    <div class="groups-header-container">
+        <p class="groups-title font-lg">My Groups</p>
+        <button class="groups-create-button button-green font-small">Create &#43;</button>
+        <button class="groups-edit-button button-general font-small js-my-groups-edit-button">Edit</button>
+    </div>
+    <div class="groups-grid-container js-my-groups-grid-container">
+    </div>
+
+    <div class="groups-header-container">
+        <p class="groups-title font-lg">Other Groups</p>
+        <button class="other-groups-edit-button button-general font-small js-other-groups-edit-button">Edit</button>
+    </div>
+    <div class="groups-grid-container js-other-groups-grid-container">
+    </div>
+
+    <script src="scripts/groups.js" type="module"></script>
+</body>
+</html>
