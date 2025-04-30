@@ -1,0 +1,122 @@
+.my-group-details-header-container {
+    background-color: #4E1F00;
+    display: flex;
+    position: fixed;
+    left: 322px;
+    right: 0;
+    top:0;
+    padding-left: 160px;
+    padding-right: 160px;
+    height: 230px;
+    z-index: 100;
+}
+
+.my-group-details-title {
+    color: #F8F4E1;
+}
+
+.my-group-details-header {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+.my-group-details-delete-button {
+    margin-left: auto;
+}
+
+/* Main */
+.my-group-details-main-container {
+    margin-top: 280px;
+    margin-bottom: 40px;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.my-group-details-member-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.my-group-details-member-title {
+    margin-bottom: 30px;
+}
+
+.my-group-details-search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.my-group-details-search-input {
+    flex: 1;
+}
+
+.my-group-details-add-button {
+    margin-left: 20px;
+}
+
+.my-group-details-header {
+    display: flex;
+}
+
+.my-group-details-member-grid-container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+
+.my-group-details-member-grid-item {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+.my-group-details-member-grid-item-profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.my-group-details-member-item-img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.my-group-details-member-grid-item-left-padding, .my-group-details-member-grid-item-right-padding {
+    padding: 15px 0;
+}
+
+.my-group-details-member-grid-item-middle-padding {
+    padding: 15px 100px 15px 0;
+}
+
+.my-group-details-calender-header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-group-details-calender-sub-header {
+    margin-top: 10px;
+}
+
+/* Calender js styles */
+.schedule-calender-day-event-slot:hover, .schedule-calender-day-event-first-slot:hover {
+    background-color: #CFCBB5;
+    cursor: pointer;
+}
+
+.schedule-calender-day-container {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-calender-time-event-container {
+    overflow: auto;
+}
+

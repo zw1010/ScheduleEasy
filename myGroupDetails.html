@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebarInner.css">
+    <link rel="stylesheet" href="styles/calender.css">
+    <link rel="stylesheet" href="styles/myGroupDetails.css">
+
+    <title>Invitation Detail</title>
+
+
+</head>
+<body>
+    <!-- Sidebar (After signup) -->
+    <div class="sidebar-container">
+        <div class="sidebar-logo-container">
+            <button class="sidebar-logo font-med js-inner-sidebar-logo">Schedule <br> Easy.</button>    
+        </div>
+        <nav>
+            <div class="sidebar-buttons-container">
+                <button class="button-sidebar font-small js-inner-sidebar-home">Home</button>
+                <button class="button-sidebar font-small js-inner-sidebar-schedule">Schedule</button>
+                <button class="button-sidebar font-small js-inner-sidebar-events">My Events</button>
+                <button class="button-sidebar font-small js-inner-sidebar-groups">Groups</button>
+                <button class="button-sidebar font-small js-inner-sidebar-invites">Invitations</button>
+            </div>
+        </nav>
+        
+        <button class="button-sidebar-profile button-sidebar font-small js-inner-sidebar-profile">Profile</button>
+    </div>
+
+    <div class="my-group-details-header-container">
+        <div class="my-group-details-header">
+            <p class="my-group-details-title font-lg">Group 1</p>
+            <button class="my-group-details-delete-button button-red font-small">Delete</button>    
+        </div>
+    </div>
+
+    <div class="my-group-details-main-container">
+        <div class="my-group-details-member-container">
+            <p class="my-group-details-member-title font-lg">Members</p>
+            <form action="">
+                <div class="my-group-details-search-container">
+                    <input class="my-group-details-search-input form-input font-small" type="text" placeholder="Search..">
+                    <button class="my-group-details-add-button button-general font-small" type="submit">Add</button>
+                </div>
+            </form>
+
+            <div class="my-group-details-member-grid-container">
+                <!-- Header -->
+                <p class="my-group-details-member-grid-item-left-padding font-small"><b>Name</b></p>
+                <p class="my-group-details-member-grid-item-middle-padding my-group-details-header-status font-small"><b>Status</b></p>
+                <p class="my-group-details-member-grid-item-right-padding font-small"><b>Action</b></p>
+
+                <!-- Grid Row -->
+                <div class="my-group-details-member-grid-item-profile-container my-group-details-member-grid-item my-group-details-member-grid-item-left-padding">
+                    <img class="my-group-details-member-item-img" src="images/profile.jpg" alt="">
+                    <p class="font-small">John</p> 
+                </div>
+                <div class="my-group-details-member-grid-item my-group-details-member-grid-item-middle-padding ">
+                    <p class="my-group-details-member-item-status font-small">Pending</p>
+                </div>
+                <div class="my-group-details-member-grid-item my-group-details-member-grid-item-right-padding ">
+                    <button class="my-group-details-member-item-button button-red font-small">Cancel</button>    
+                </div>
+
+                <!-- Grid Row -->
+                <div class="my-group-details-member-grid-item-profile-container my-group-details-member-grid-item my-group-details-member-grid-item-left-padding">
+                    <img class="my-group-details-member-item-img" src="images/profile.jpg" alt="">
+                    <p class="font-small">John</p> 
+                </div>
+                <div class="my-group-details-member-grid-item my-group-details-member-grid-item-middle-padding ">
+                    <p class="my-group-details-member-item-status font-small">Pending</p>
+                </div>
+                <div class="my-group-details-member-grid-item my-group-details-member-grid-item-right-padding ">
+                    <button class="my-group-details-member-item-button button-red font-small">Cancel</button>    
+                </div>
+            </div>
+        </div>
+        
+        <div class="my-group-details-calender-container">
+            <div class="my-group-details-calender-header-container schedule-calender-header-container">
+                <div class="schedule-month-container">
+                    <p class="js-schedule-calender-date font-lg">April 2025</p>
+                    <button class="schedule-left-button button-general js-schedule-left-button"><img src="images/arrow-left.svg" alt=""></button>
+                    <button class="schedule-right-button button-general js-schedule-right-button"><img src="images/arrow-right.svg" alt=""></button>
+                </div>
+                <p class="my-group-details-calender-sub-header font-small">Use the calender to set your free time.</p>
+            </div>
+            <div class="schedule-calender-container js-schedule-calender-container">
+            </div>
+        </div> 
+    </div>
+    
+
+    <script src="scripts/myGroupDetails.js" type="module"></script>
+</body>
+</html>
