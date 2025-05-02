@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/sidebarInner.css">
     <link rel="stylesheet" href="styles/calender.css">
-    <link rel="stylesheet" href="styles/myGroupDetails.css">
+    <link rel="stylesheet" href="styles/otherGroupDetails.css">
 
     <title>Invitation Detail</title>
 
@@ -31,35 +31,28 @@
         <button class="button-sidebar-profile button-sidebar font-small js-inner-sidebar-profile">Profile</button>
     </div>
 
-    <div class="my-group-details-header-container">
-        <div class="my-group-details-header">
-            <p class="my-group-details-title font-lg">Group 1</p>
-            <button class="my-group-details-delete-button button-red font-small">Delete</button>    
+    <div class="other-group-details-header-container">
+        <div class="other-group-details-header">
+            <p class="other-group-details-title font-lg">Group 1</p>
+            <button class="other-group-details-leave-button button-red font-small">Leave</button>    
         </div>
     </div>
 
-    <div class="my-group-details-main-container">
-        <div class="my-group-details-member-container">
-            <p class="my-group-details-member-title font-lg">Members</p>
-            <form action="">
-                <div class="my-group-details-search-container">
-                    <input class="my-group-details-search-input form-input font-small" type="text" placeholder="Search..">
-                    <button class="my-group-details-add-button button-general font-small" type="submit">Add</button>
-                </div>
-            </form>
-
-            <div class="my-group-details-member-grid-container">
+    <div class="other-group-details-main-container">
+        <div class="other-group-details-member-container">
+            <p class="other-group-details-member-title font-lg">Members</p>
+            <div class="other-group-details-member-grid-container">
             </div>
         </div>
         
-        <div class="my-group-details-calender-container">
-            <div class="my-group-details-calender-header-container schedule-calender-header-container">
+        <div class="other-group-details-calender-container">
+            <div class="other-group-details-calender-header-container schedule-calender-header-container">
                 <div class="schedule-month-container">
                     <p class="js-schedule-calender-date font-lg">April 2025</p>
                     <button class="schedule-left-button button-general js-schedule-left-button"><img src="images/arrow-left.svg" alt=""></button>
                     <button class="schedule-right-button button-general js-schedule-right-button"><img src="images/arrow-right.svg" alt=""></button>
                 </div>
-                <p class="my-group-details-calender-sub-header font-small">Use the calender to set your free time.</p>
+                <p class="other-group-details-calender-sub-header font-small">Use the calender to set your free time.</p>
             </div>
             <div class="schedule-calender-container js-schedule-calender-container">
             </div>
@@ -67,6 +60,6 @@
     </div>
     
 
-    <script src="scripts/myGroupDetails.js" type="module"></script>
+    <script src="scripts/otherGroupDetails.js" type="module"></script>
 </body>
 </html>
