@@ -1,10 +1,11 @@
 import { handleInnerSidebarButtons } from "./sidebar.js";
-import { renderCalender } from "./calender.js";
-import { currentDate } from "./calender.js";
+import { handleCalenderButtons, renderCalender } from "./calender.js";
+import { currentDate} from "./calender.js";
 
 handleInnerSidebarButtons();
 renderMembers();
-renderCalender(currentDate);
+renderCalender(currentDate, "free");
+handleCalenderButtons("free");
 
 function renderMembers() {
     const gridContainer = document.querySelector('.my-group-details-member-grid-container');
@@ -34,5 +35,4 @@ function renderMembers() {
     }
 
     gridContainer.innerHTML = html;
-    
 }

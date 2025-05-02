@@ -1,11 +1,9 @@
 import "./libraries/dayjs.min.js";
+import { renderAddFreeTimeUI } from "./addFreeTimeOverlay.js";
 
 export let currentDate = dayjs();
 
-renderCalender(currentDate);
-handleCalenderButtons();
-
-export function renderCalender(currentDate) {
+export function renderCalender(currentDate, calenderType) {
     const calenderContainer = document.querySelector('.js-schedule-calender-container');
     const monthPara = document.querySelector('.js-schedule-calender-date');
 
@@ -62,26 +60,25 @@ export function renderCalender(currentDate) {
     }
     calenderGridContainer.innerHTML = gridHtml;
     
-    handleCalenderDayHover();
+    handleCalenderDayHover(calenderType);
 }
 
-function handleCalenderButtons() {
+export function handleCalenderButtons(calenderType) {
     const backBtn = document.querySelector('.js-schedule-left-button');
     const forwardBtn = document.querySelector('.js-schedule-right-button');
     
     backBtn.addEventListener('click', () => {
         currentDate = currentDate.subtract(1, 'month');
-        renderCalender(currentDate);
-
+        renderCalender(currentDate, calenderType);
     });
 
     forwardBtn.addEventListener('click', () => {
         currentDate = currentDate.add(1, 'month');
-        renderCalender(currentDate);
+        renderCalender(currentDate, calenderType);
     });
 }
 
-function handleCalenderDayHover() {
+function handleCalenderDayHover(calenderType) {
     const dayList = document.querySelectorAll('.js-schedule-overlay');
     dayList.forEach((day) => {
         day.addEventListener('mouseover', () => {
@@ -93,12 +90,12 @@ function handleCalenderDayHover() {
         });
 
         day.addEventListener('click', () => {
-            renderCalenderDay(day.dataset.date, day.dataset.day);
+            renderCalenderDay(day.dataset.date, day.dataset.day, calenderType);
         });
     });
 }
 
-function renderCalenderDay(date, day) {
+function renderCalenderDay(date, day, calenderType) {
     const calenderContainer = document.querySelector('.js-schedule-calender-container');
 
     calenderContainer.innerHTML = `
@@ -119,7 +116,7 @@ function renderCalenderDay(date, day) {
     // Handle cross button onclick
     document.querySelector('.js-schedule-calender-day-cross-button')
         .addEventListener('click', () => {
-            renderCalender(currentDate);
+            renderCalender(currentDate, calenderType);
         });
 
     //// Generate Timestamps and Empty slots
@@ -210,4 +207,25 @@ function renderCalenderDay(date, day) {
 
     timeGrid.innerHTML = html;
     eventGrid.innerHTML = eventtHtml;
+
+    // Functions based on calender type
+    if (calenderType === "free") {
+        handleAddFreeTimeOnClick();
+    }
+    else if (calenderType === "schedule") {
+
+    }
+}
+
+function handleAddFreeTimeOnClick() {
+    const daySlots = document.querySelectorAll('.schedule-calender-day-event-slot');
+        daySlots.forEach(slot => {
+            slot.addEventListener('click', () => {{
+                renderAddFreeTimeUI();
+            }})
+        });
+    document.querySelector('.schedule-calender-day-event-first-slot')
+        .addEventListener('click', () => {{
+            renderAddFreeTimeUI();
+        }});
 }

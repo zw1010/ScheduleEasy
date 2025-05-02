@@ -1,10 +1,10 @@
 import { handleInnerSidebarButtons } from "./sidebar.js";
-import { renderCalender } from "./calender.js";
+import { renderCalender, handleCalenderButtons} from "./calender.js";
 import { currentDate } from "./calender.js";
 
 handleInnerSidebarButtons();
-renderCalender(currentDate);
-handleCalenderButtons();
+renderCalender(currentDate, "schedule");
+handleCalenderButtons("schedule");
 
 function renderCalenderDayDynamic() {
     // If existing event
