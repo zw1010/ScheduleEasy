@@ -1,10 +1,11 @@
 import { handleInnerSidebarButtons } from "./sidebar.js";
-import { renderCalender } from "./calender.js";
+import { renderCalender, handleCalenderButtons} from "./calender.js";
 import { currentDate } from "./calender.js";
 
 handleInnerSidebarButtons();
 renderMembers();
-renderCalender(currentDate);
+renderCalender(currentDate, "free");
+handleCalenderButtons("free");
 
 function renderMembers() {
     const gridContainer = document.querySelector('.other-group-details-member-grid-container');
