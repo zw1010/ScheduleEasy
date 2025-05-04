@@ -1,10 +1,9 @@
 import { handleInnerSidebarButtons } from "./sidebar.js";
 import { renderCalender, handleCalenderButtons} from "./calender.js";
-import { currentDate } from "./calender.js";
 
 handleInnerSidebarButtons();
 renderMembers();
-renderCalender(currentDate, "free");
+renderCalender("free");
 handleCalenderButtons("free");
 
 function renderMembers() {

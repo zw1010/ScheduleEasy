@@ -1,12 +1,11 @@
 import { handleInnerSidebarButtons } from "./sidebar.js";
 import { renderCalender, handleCalenderButtons} from "./calender.js";
-import { currentDate } from "./calender.js";
 
 handleInnerSidebarButtons();
 renderPage();
 
 function renderPage() {
-    renderCalender(currentDate, "schedule");
+    renderCalender("schedule");
     handleCalenderButtons("schedule");
     handleDropDown();
 }

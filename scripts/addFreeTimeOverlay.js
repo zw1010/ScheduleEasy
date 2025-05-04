@@ -1,4 +1,6 @@
-export function renderAddFreeTimeUI() {
+import "./libraries/dayjs.min.js";
+
+export function renderAddFreeTimeUI(selectedDateObject) {
     const container = document.querySelector('.js-group-add-free-time-container');
     container.innerHTML = `
                         <div class="group-add-free-time-overlay">
@@ -10,15 +12,15 @@ export function renderAddFreeTimeUI() {
 
                                 <div class="group-add-free-time-date-container">
                                     <label class="form-label-margin font-small" for="date"><b>Date</b></label>
-                                    <input class="form-input font-small" type="date" name="date" required>
+                                    <input class="form-input font-small js-group-add-free-time-date-input" type="date" name="date" required>
                                 </div>
                         
                                 <div class="group-add-free-time-time-container">
                                     <label class="form-label-margin font-small" for="from-time"><b>Time</b></label>
                                     <div class="group-add-free-time-time-input-container">
-                                        <input class="form-input font-small" type="time" name="from-time" required>
+                                        <input class="form-input font-small js-group-add-free-time-from-time-input" type="time" name="from-time" required>
                                         <div class="group-add-free-time-time-input-seperator"></div>
-                                        <input class="form-input font-small" type="time" name="to-time" required>
+                                        <input class="form-input font-small js-group-add-free-time-to-time-input" type="time" name="to-time" required>
                                     </div>
                                 </div>
                         
@@ -38,6 +40,18 @@ export function renderAddFreeTimeUI() {
                         </div>
                             `;
     handleCrossButton();
+    console.log(selectedDateObject);
+
+    // Set selected date and time
+    document.querySelector('.js-group-add-free-time-date-input')
+        .value = selectedDateObject.format('YYYY-MM-DD');
+
+    document.querySelector(".js-group-add-free-time-from-time-input")
+        .value = selectedDateObject.format('HH:mm');
+
+    selectedDateObject = selectedDateObject.add(1, 'hours');
+    document.querySelector(".js-group-add-free-time-to-time-input")
+        .value = selectedDateObject.format('HH:mm');
 }
 
 function handleCrossButton() {
