@@ -3,8 +3,28 @@ import { renderCalender, handleCalenderButtons} from "./calender.js";
 import { currentDate } from "./calender.js";
 
 handleInnerSidebarButtons();
-renderCalender(currentDate, "schedule");
-handleCalenderButtons("schedule");
+renderPage();
+
+function renderPage() {
+    renderCalender(currentDate, "schedule");
+    handleCalenderButtons("schedule");
+    handleDropDown();
+}
+
+function handleDropDown() {
+    const dropdownContainer = document.querySelector('.schedule-group-select');
+    dropdownContainer.innerHTML = `
+                                <select class="font-small" id="schedule-dropdown">
+                                    <option>Group 1</option>
+                                    <option>Group 2</option>
+                                    <option>Group 3</option>
+                                </select>
+                                    `;
+    
+    dropdownContainer.addEventListener('change', () => {
+        // Update calender day events
+    });
+}
 
 function renderCalenderDayDynamic() {
     // If existing event

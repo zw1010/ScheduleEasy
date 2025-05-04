@@ -3,23 +3,6 @@ import { handleInnerSidebarButtons } from "./sidebar.js";
 handleInnerSidebarButtons();
 renderGroups();
 
-function handleGroupDetailHover() {
-    const groupDetails = document.querySelectorAll('.js-group-invites-overlay');
-    groupDetails.forEach((groupDetail) => {
-        groupDetail.addEventListener('mouseover', () => {
-            groupDetail.style.opacity = "1";
-    
-        });
-        groupDetail.addEventListener('mouseout', () => {
-            groupDetail.style.opacity = "0";
-        });
-
-        groupDetail.addEventListener('click', () => {
-            window.location.href = "invitesDetails.html";
-        });
-    });
-}
-
 function renderGroups() {
     const gridContainer = document.querySelector('.js-group-invites-grid-container');
     let html = "";
@@ -56,4 +39,21 @@ function renderGroups() {
     gridContainer.innerHTML = html;
 
     handleGroupDetailHover();
+}
+
+function handleGroupDetailHover() {
+    const groupDetails = document.querySelectorAll('.js-group-invites-overlay');
+    groupDetails.forEach((groupDetail) => {
+        groupDetail.addEventListener('mouseover', () => {
+            groupDetail.style.opacity = "1";
+    
+        });
+        groupDetail.addEventListener('mouseout', () => {
+            groupDetail.style.opacity = "0";
+        });
+
+        groupDetail.addEventListener('click', () => {
+            window.location.href = "invitesDetails.html";
+        });
+    });
 }

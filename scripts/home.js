@@ -4,47 +4,6 @@ handleInnerSidebarButtons();
 renderHomeEvents();
 handleSeeAllButton();
 
-function handleEventDetailHover() {
-    const eventDetails = document.querySelectorAll('.js-home-overlay');
-    eventDetails.forEach((eventDetail) => {
-        eventDetail.addEventListener('mouseover', () => {
-            eventDetail.style.opacity = "1";
-    
-        });
-        eventDetail.addEventListener('mouseout', () => {
-            eventDetail.style.opacity = "0";
-        });
-
-        eventDetail.addEventListener('click', () => {
-            window.location.href = "otherEventTemplate.html";
-        });
-    });
-}
-
-
-function handleMyEventsDetailsHover() {
-    const eventDetails = document.querySelectorAll('.js-my-events-overlay');
-    eventDetails.forEach((eventDetail) => {
-        eventDetail.addEventListener('mouseover', () => {
-            eventDetail.style.opacity = "1";
-    
-        });
-        eventDetail.addEventListener('mouseout', () => {
-            eventDetail.style.opacity = "0";
-        });
-
-        eventDetail.addEventListener('click', () => {
-            window.location.href = "myEventTemplate.html";
-        });
-    });
-}
-
-function handleSeeAllButton() {
-    const seeAllBtn = document.querySelector('.js-home-my-events-button');
-    seeAllBtn.addEventListener('click', () => {
-        window.location.href = "myEvents.html";
-    });
-}
 
 
 function renderHomeEvents() {
@@ -161,4 +120,46 @@ function renderMyEvents() {
     }
 
     myEventsGridContainer.innerHTML = html;
+}
+
+function handleEventDetailHover() {
+    const eventDetails = document.querySelectorAll('.js-home-overlay');
+    eventDetails.forEach((eventDetail) => {
+        eventDetail.addEventListener('mouseover', () => {
+            eventDetail.style.opacity = "1";
+    
+        });
+        eventDetail.addEventListener('mouseout', () => {
+            eventDetail.style.opacity = "0";
+        });
+
+        eventDetail.addEventListener('click', () => {
+            window.location.href = "otherEventTemplate.html";
+        });
+    });
+}
+
+
+function handleMyEventsDetailsHover() {
+    const eventDetails = document.querySelectorAll('.js-my-events-overlay');
+    eventDetails.forEach((eventDetail) => {
+        eventDetail.addEventListener('mouseover', () => {
+            eventDetail.style.opacity = "1";
+    
+        });
+        eventDetail.addEventListener('mouseout', () => {
+            eventDetail.style.opacity = "0";
+        });
+
+        eventDetail.addEventListener('click', () => {
+            window.location.href = "myEventTemplate.html";
+        });
+    });
+}
+
+function handleSeeAllButton() {
+    const seeAllBtn = document.querySelector('.js-home-my-events-button');
+    seeAllBtn.addEventListener('click', () => {
+        window.location.href = "myEvents.html";
+    });
 }
