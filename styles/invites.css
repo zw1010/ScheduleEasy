@@ -6,12 +6,19 @@
 
 .group-invites-grid-container {
     display: grid;
-    grid-template-columns: 390px 390px 390px;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     row-gap: 50px;
+    column-gap: 50px;
     margin-left: 160px;
     margin-right: 160px;
     margin-bottom: 70px;
+}
+
+@media screen and (min-width: 1600px) {
+    .groups-grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .group-invites-grid-item {
@@ -47,10 +54,8 @@
 }
 
 .group-invites-members-grid-container {
-    display: grid;
-    grid-template-columns: 42px 42px 42px 42px 42px 42px;
-    justify-content: space-between;
-    row-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .group-invites-members-img {
@@ -59,11 +64,14 @@
     height: 42px;
     border-radius: 50%;
     object-fit: cover;
+    margin-right: 11px;
+    margin-top: 11px;
 }
 
 .group-invites-members-more {
     align-self: center;
     text-align: center;
+    color: #F8F4E1;
 }
 
 .group-invites-grid-item-bottom {

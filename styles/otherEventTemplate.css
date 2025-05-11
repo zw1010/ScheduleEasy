@@ -92,9 +92,15 @@ margin-bottom: 60px;
 
 .home-events-members-grid {
     display: grid;
-    grid-template-columns: 70px 70px 70px 70px 70px;
+    grid-template-columns: 70px 70px 70px;
     column-gap: 30px;
     row-gap: 15px;
+}
+
+@media screen and (min-width: 1600px) {
+    .home-events-members-grid {
+        grid-template-columns: 70px 70px 70px 70px 70px 70px;
+    }
 }
 
 .home-events-members-grid-item {
