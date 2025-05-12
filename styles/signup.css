@@ -11,10 +11,12 @@
     flex-direction: column;
     width: 370px;
     margin-right: 250px;
+    margin-left: 120px;
 }   
 
 .signup-image-container {
     width: 500px;   
+    margin-right: 120px;
 }
 
 .signup-image {

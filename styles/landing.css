@@ -10,19 +10,21 @@
 }
 
 .landing-text-container {
-    width: auto;
+    width: 600px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-left: 120px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-
-.landing-text {
-    width: 600px;
-}   
 
 .landing-text-details { 
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.landing-start-button {
+    align-self: flex-start;
 }

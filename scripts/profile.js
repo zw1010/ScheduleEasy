@@ -25,33 +25,29 @@ function renderPage() {
             </div>
 
             <div class="profile-main-container">
-                <form action="">
-                    <div class="profile-main-left">
-                        <p class="profile-email-header font-small"><b>Email</b></p>
-                        <p class="profile-email font-small">abc@gmail.com</p>
+                <form action="" class="profile-main-left">
+                    <p class="profile-email-header font-small"><b>Email</b></p>
+                    <p class="profile-email font-small">abc@gmail.com</p>
 
 
-                        <label class="form-label-margin font-small" for="name"><b>Display Name</b></label>
-                        <input class="profile-name form-input font-small" name="name" required>
+                    <label class="form-label-margin font-small" for="name"><b>Display Name</b></label>
+                    <input class="profile-name form-input font-small" name="name" required>
 
-                        <button class="button-general font-small" type="submit">Change</button>
-                    </div>
+                    <button class="button-general font-small" type="submit">Change</button>
                     <p class="profile-name-result font-small js-profile-name-result"></p>
                 </form>
 
-                <form action="">
-                    <div class="profile-main-right">
-                        <label class="form-label-margin font-small" for="oldPass"><b>Old Password</b></label>
-                        <input class="profile-pass-old form-input-margin form-input font-small" type="password" name="oldPass" required>
+                <form action="" class="profile-main-right">
+                    <label class="form-label-margin font-small" for="oldPass"><b>Old Password</b></label>
+                    <input class="profile-pass-old form-input-margin form-input font-small" type="password" name="oldPass" required>
+                
+                    <label class="form-label-margin font-small" for="newPass"><b>New Password</b></label>
+                    <input class="form-input-margin form-input font-small" type="password" name="newPass" required>
                     
-                        <label class="form-label-margin font-small" for="newPass"><b>New Password</b></label>
-                        <input class="form-input-margin form-input font-small" type="password" name="newPass" required>
-                        
-                        <label class="form-label-margin font-small" for="newPassCfm"><b>Confirm New Password</b></label>
-                        <input class="profile-pass-new-cfm form-input font-small" type="password" name="newPassCfm" required>
+                    <label class="form-label-margin font-small" for="newPassCfm"><b>Confirm New Password</b></label>
+                    <input class="profile-pass-new-cfm form-input font-small" type="password" name="newPassCfm" required>
 
-                        <button class="button-general font-small" type="submit">Change</button>
-                    </div>
+                    <button class="button-general font-small" type="submit">Change</button>
                     <p class="profile-change-pass-result font-small js-profile-change-pass-result"></p>
                 </form>
             </div>

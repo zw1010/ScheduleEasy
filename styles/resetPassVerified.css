@@ -11,10 +11,12 @@
     flex-direction: column;
     width: 370px;
     margin-right: 250px;
+    margin-left: 120px; 
 }   
 
 .reset-pass-verified-image-container {
     width: 430px;   
+    margin-right: 120px; 
 }
 
 .reset-pass-verified-image {

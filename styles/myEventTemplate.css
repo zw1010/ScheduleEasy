@@ -41,7 +41,7 @@
 .my-events-main-left {
     display: flex;
     flex-direction: column;
-    margin-right: auto;
+    margin-right: 100px;
 }
 
 .my-events-desc-textarea, .my-events-loc-textarea {
@@ -86,16 +86,16 @@
 }
 
 .my-events-members-grid {
-    display: grid;
-    grid-template-columns: 70px 70px 70px 70px 70px;
-    column-gap: 30px;
-    row-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .my-events-members-grid-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 30px;
+    margin-bottom: 15px;
 }
 
 .my-events-members-grid-item > img {
@@ -114,10 +114,12 @@
 
     .my-events-datetime-container {
         flex-direction: row;
+        margin-bottom: 0;
     }
 
     .my-events-time-container {
         margin-left: 40px;
+        margin-bottom: 0;
     }
 }
 

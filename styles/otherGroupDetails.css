@@ -44,16 +44,17 @@
 }
 
 .other-group-details-member-grid-container {
-    display: grid;
-    grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px;
-    column-gap: 30px;
-    row-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .other-group-details-member-grid-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 30px;
+    margin-bottom: 15px;
+
 }
 
 .other-group-details-member-grid-item-img {
